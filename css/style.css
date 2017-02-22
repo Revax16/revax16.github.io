@@ -11,7 +11,7 @@ body{
 .hero-container{
     height: 110vh;
     width: 100vw;
-    background: url('../img/header.jpeg') no-repeat;
+    background: url('../img/header_compressed.jpg') no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -23,6 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background: rgba(0, 0, 0, 0.15);
 }
 .hero-title{
     font-family: 'Raleway';

@@ -16,5 +16,13 @@ var main = function () {
             el.innerHTML = ' ';
         }
     }
+
+    // Load header Image
+    var img = new Image();
+    img.src = './img/header.jpeg';
+    img.onload = function () {
+        console.log('a');
+        document.querySelector('.hero-container').style.background = 'url(\'./img/header.jpeg\') no-repeat cover';
+    }
 }
 main();
