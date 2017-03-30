@@ -68,7 +68,7 @@ body{
     width: 102%;
     height: 100px;
     border-radius: 50%;
-    box-shadow: 0 31px 0 30px #FACE8C;
+    box-shadow: 0 31px 0 30px #6E0500;
     background-color: none;
 }
 .hero-down{
@@ -84,6 +84,10 @@ body{
     font-size: 30px;
     cursor: pointer;
 }
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Navigation -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
 
 .nav-container{
     /*width: 100%;*/
@@ -108,12 +112,52 @@ body{
 }
 .nav-button:hover{
     background: #FFF;
-    color: #97A5C7;
+    color: #6E0500;
     /*border-bottom: 3px solid #FFF;*/
 }
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Projets -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
 .projects-container{
-    background:#FACE8C;
-    padding: 100px 0;
+    background:#6E0500;
+    width: 80%;
+    padding: 30px 10%;
+    overflow: hidden;
+}
+.projects-title{
+    padding: 0 0 30px 0;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #F0F0F0;
+    font-size: 35px;
+}
+.projects-row{
+    padding: 2% 5%;
+    width: 23.33333333332%;
+    float: left;
+    text-align: center;
+}
+.project-thumb{
+    width:80%;
+    padding-top: 80%;
+    margin: 0 10%;
+    background: #CCC;
+    border-radius: 50%;
+}
+.project-title {
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #FFF;
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+}
+.project-desc{
+    margin: 0;
+    line-height: 22px;
+    font-family: 'Raleway';
+    color: #FFF;
 }
 /* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
 /* -- Footer -- */
@@ -121,7 +165,7 @@ body{
 .footer-container{
     width: 100%;
     padding: 50px 0;
-    background: #223540;
+    background: #222;
     color: #BBB;
     font-weight: 200;
     font-family: 'Raleway';
@@ -136,7 +180,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #1B2A33;
+    background: #292929;
     margin: 5px;
     line-height: 43px;
     cursor: pointer;

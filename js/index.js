@@ -1,6 +1,6 @@
 var main = function () {
     // Text Section Hero
-    var desc = ['applications JavaScript.', 'sites vitrines.', 'applications PHP.'],
+    var desc = ['vous donner des frissons.', 'vous donner surprendre.'],
         int = setInterval(heroUpdate, 75),
         current = {d:0, l:0},
         el = document.querySelector('#hero-desc');
@@ -17,12 +17,12 @@ var main = function () {
         }
     }
 
-    // Load header Image
-    var img = new Image();
-    img.src = './img/header.jpeg';
-    img.onload = function () {
-        console.log('a');
-        document.querySelector('.hero-container').style.background = 'url(\'./img/header.jpeg\') no-repeat cover';
-    }
+    // // Load header Image
+    // var img = new Image();
+    // img.src = './img/header.jpeg';
+    // img.onload = function () {
+    //     console.log('a');
+    //     document.querySelector('.hero-container').style.background = 'url(\'./img/header.jpeg\') no-repeat cover';
+    // }
 }
 main();
