@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.strong{
+    font-weight: 700;
+}
+/* --- --- --- --- --- --- --- --- --- --- --- */
+/* --- hero --- */
+/* --- --- --- --- --- --- --- --- --- --- --- */
+.hero-container{
+    height: 110vh;
+    width: 100vw;
+    background: url('../img/header_compressed.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.hero-center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+}
+.hero-title{
+    font-family: 'Raleway';
+    font-size: 15vw;
+    color: #FFF;
+    overflow: hidden;
+}
+.hero-desc{
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: #FFF;
+    font-size: 26px;
+}
+.hero-desc > span{
+    display: inline-block;
+    min-height: 25px;
+}
+.hero-desc > .hero-cursor::after{
+    content: ' ';
+    display: inline-block;
+    height: 30px;
+    margin: 0 0 -6px 2px;
+    width: 2px;
+    background: #FFF;
+}
+.hero-desc > .hide::after .hero-desc > .hero-cursor::after{
+    opacity: 0;
+}
+.hero-highlight{
+    background: rgba(164, 205, 255, 0.5);
+    /*color: #2A3A3F;*/
+}
+.hero-heart{
+    font-size: 0.7em;
+    padding: 5px;
+    color: #FF4B3B;
+}
+.hero-curve{
+    position: absolute;
+    bottom: 0;
+    left: -1%;
+    width: 102%;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 31px 0 30px #6E0500;
+    background-color: none;
+}
+.hero-down{
+    display: inline-block;
+    margin: 13vh 0 0 0;
+    color: #FFF;
+    border: 2px solid #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-down:hover {
+    animation: downArrow 0.7s infinite;
+}
+@keyframes downArrow {
+    33% {line-height: 40px;}
+    66% {line-height: 53px;}
+    100% {line-height: 53px;}
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Navigation -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+.nav-container{
+    /*width: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-button{
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    color: #FFF;
+    font-size: 18px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 0 10px;
+    border-radius: 3px;
+    /*border-bottom: 3px solid rgba(0, 0, 0, 0);*/
+}
+.nav-button:hover{
+    background: #FFF;
+    color: #6E0500;
+    /*border-bottom: 3px solid #FFF;*/
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Projets -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+.projects-container{
+    background:#6E0500;
+    width: 80%;
+    padding: 30px 10%;
+    overflow: hidden;
+    text-align: center;
+}
+.projects-title{
+    padding: 0 0 30px 0;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #F0F0F0;
+    font-size: 35px;
+}
+.projects-row{
+    padding: 2% 5%;
+    width: 22%;
+    display: inline-block;
+}
+.project-thumb{
+    width:80%;
+    padding-top: 80%;
+    margin: 0 10%;
+    background: #CCC;
+    border-radius: 50%;
+}
+.project-thumb-xavier {
+    background: url('../img/team/xavier.jpg');
+    background-size: cover;
+}
+.project-thumb-camille {
+    background: url('../img/team/camille.jpg');
+    background-size: cover;
+}
+.project-thumb-jeanne {
+    background: url('../img/team/jeanne.jpg');
+    background-size: cover;
+}
+.project-thumb-michelle {
+    background: url('../img/team/michelle.jpg');
+    background-size: cover;
+}
+.project-thumb-cedric {
+    background: url('../img/team/cedric.jpg');
+    background-size: cover;
+}
+.project-title {
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #FFF;
+    margin: 15px 0 5px 0;
+    font-weight: bold;
+}
+.project-desc{
+    margin: 0;
+    line-height: 22px;
+    font-family: 'Raleway';
+    color: #FFF;
+}
+@media screen and (max-width: 950px) {
+    .projects-row{
+        width: 38%;
+    }
+    .thanks-container{
+        width: 80% !important;
+        margin: 20px 10% !important;
+    }
+}
+@media screen and (max-width: 550px) {
+    .projects-row{
+        width: 88%;
+        padding: 4% 5%;
+    }
+}
+
+.synopsis-container {
+    font-family: 'Raleway';
+    color: #F0F0F0;
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+.thanks-container {
+    width: 60%;
+    margin: 20px 20%;
+    font-family: 'Raleway';
+    color: #F0F0F0;
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 15px;
+}
+.thanks-b{
+    font-weight: 700;
+}
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Trailer -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+.trailer-container {
+    width: 100vw;
+    padding: 40px 0;
+    background: url('../img/trailer_bg_blur.png') no-repeat;
+    background-size: cover;
+}
+.trailer-video{
+    width: 70%;
+    margin: 0 15%;
+}
+.trailer-video > video {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Footer -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+.footer-container{
+    width: 100%;
+    padding: 50px 0;
+    background: #222;
+    color: #BBB;
+    font-weight: 200;
+    font-family: 'Raleway';
+    text-align: center;
+}
+.footer-contact-list{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+}
+.footer-contact-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #292929;
+    margin: 5px;
+    line-height: 43px;
+    cursor: pointer;
+}
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/* -- Font -- */
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+@font-face {
+    font-family: 'function';
+    font-weight: 400;
+    src: url('../fonts/function.woff');
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 300;
+    src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 700;
+    src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: 'themify';
+    font-weight: 700;
+    src: url('../fonts/themify.ttf');
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    src: url('../fonts/bebas_neue/BebasNeue.otf');
+}

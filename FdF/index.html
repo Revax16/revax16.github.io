@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gab - Le Film</title>
+        <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/icons.css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div class="hero-container" id="nav-home">
+            <div class="hero-center">
+                <div class="hero-title">GAB</div>
+                <div class="hero-desc">Un film qui va <br><span id="hero-desc" class="hero-cursor"></span></div>
+                <div class="hero-down-container">
+                    <div class="hero-down" data-scroll="nav-synopsis">
+                        <span class="ti-arrow-down"></span>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-container">
+                <li class="nav-button" data-scroll="nav-home">Accueil</li>
+                <li class="nav-button" data-scroll="nav-synopsis">L'Histoire</li>
+                <li class="nav-button" data-scroll="nav-trailer">La Bande-Annonce</li>
+                <li class="nav-button" data-scroll="nav-staff">L'équipe</li>
+            </ul>
+            <!-- <div class="hero-curve"></div> -->
+        </div>
+        <div class="projects-container" id="nav-synopsis">
+            <div class="projects-title">L'Histoire</div>
+            <div class="synopsis-container">
+                Une adolescente, dénommée Gabrielle, entourée d’amis, devient
+                soudainement discrète et mystérieuse. Après avoir décliné plusieurs
+                invitations, ses amis commencent à s’inquiéter sur la situation.
+                De théorie en théorie puis de rumeur en rumeur, ils vont jusqu’à
+                s’imaginer le pire. Que fait Gabrielle le soir chez elle ? Ses amis
+                ont-ils raison de s’inquiéter ? Quel secret cache-t-elle ?
+            </div>
+        </div>
+        <div class="trailer-container" id="nav-trailer">
+            <div class="projects-title">La Bande-Annonce</div>
+            <div class="trailer-video">
+                <video controls>
+                    <source src="./img/trailer.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="projects-container" id="nav-staff">
+            <div class="projects-title">L'équipe</div>
+            <div class="projects-row">
+                <div class="project-thumb project-thumb-xavier"></div>
+                <div class="project-title">Xavier Hamel</div>
+                <p class="project-desc">Image & Montage</p>
+            </div>
+            <div class="projects-row">
+                <div class="project-thumb project-thumb-camille"></div>
+                <div class="project-title">Camille Lacasse</div>
+                <p class="project-desc">Scénario & Actrice</p>
+            </div>
+            <div class="projects-row">
+                <div class="project-thumb project-thumb-jeanne"></div>
+                <div class="project-title">Jeanne Dionne</div>
+                <p class="project-desc">Scénario</p>
+            </div>
+            <div class="projects-row">
+                <div class="project-thumb project-thumb-michelle"></div>
+                <div class="project-title">Michelle Huot</div>
+                <p class="project-desc">Actrice & Réalisatrice</p>
+            </div>
+            <div class="projects-row">
+                <div class="project-thumb project-thumb-cedric"></div>
+                <div class="project-title">Cédric Hébert</div>
+                <p class="project-desc">Acteur & Son</p>
+            </div>
+            <div class="thanks-container">
+                Un grand merci à <span class="thanks-b">Chantal Lachance</span>,
+                <span class="thanks-b">Vincent Cormier</span>, <span class="thanks-b">Éléonore Cormier</span>,
+                <span class="thanks-b">Alexandra Thériault</span> ainsi que <span class="thanks-b">Loïc De Bluze</span> pour nous avoir aidé lors du tournage et
+                au <span class="thanks-b">Cegep Champlain - St-Lawrence</span> pour nous avoir accueillit.
+            </div>
+        </div>
+        <div class="footer-container">
+            <p>Réalisé par <span class="strong">Xavier</span> pour le projet du <span class="strong">Fesival Du Film Protic</span></p>
+            <div class="footer-contact-list">
+                <div class="footer-contact-item"><span class="ti-facebook"></span></div>
+                <div class="footer-contact-item"><span class="ti-twitter-alt"></span></div>
+                <div class="footer-contact-item"><span class="ti-google"></span></div>
+            </div>
+        </div>
+        <script src="js/utils.js"></script>
+        <script src="js/scrollsmouth.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
